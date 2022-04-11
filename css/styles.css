@@ -1,9 +1,5 @@
-:root {
-  --basic-title-color: #212121;
-  --base-text-color: #757575;
-  --white-color: #ffffff;
-  --blue-color: #2196f3;
-}
+@import "/css/_root.css";
+
 body {
   margin: 0;
   color: var(--basic-title-color);
@@ -138,17 +134,42 @@ margin-right: 50px;
 }
 
 /*Герой*/
+/* .hero-background{
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(47, 48, 58, 0.4),url(../images/background/hero.jpg);
+  background-image: url(../images/background/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-.hero {    
+  outline: 1px solid yellow;
+} */
+.hero {  
+  
   padding-top: 200px;
   padding-bottom: 200px;
   align-items: center;
-
+   
   color: var(--white-color);
   background: #2F303A;
   line-height: 1.36;    
   text-align: center;
   letter-spacing: 0.06em;  
+
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image:
+  linear-gradient( right, #2F303A 40%) , 
+  rgba(47, 48, 58, 0.4),
+  url('../images/background/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {   
@@ -213,7 +234,32 @@ margin-right: 50px;
 .project-item:not(:last-child) {
   margin-right: 30px;
 }
+.project-item::before{
+  display: block;
+  content: '';
+  width: 270px;
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--background-icon);
+  border-radius: 4px;
+  margin-bottom: 30px;
+} 
+/* Иконки пректов */
 
+.icon-detail{
+  background-image: url();
+}
+.icon-punctuality{
+  background-image: url();
+}
+.icon-planning{
+  background-image: url();
+}
+.icon-technologies{
+  background-image: url();
+}
 .project-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -304,7 +350,15 @@ margin-right: 50px;
   line-height: 1.19;
   text-align: center;  
 }
+.social-command-link{
 
+}
+.item-command-link{
+
+}
+.command-link{
+
+}
 /*Footer*/
 .footer {
   display: flex;
@@ -388,7 +442,7 @@ margin-right: 50px;
   border: 0 solid transparent;
 
   color: var(--basic-title-color);
-  background-color: #F5F4FA;
+  background-color: var(--background-icon);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;

@@ -1,4 +1,3 @@
-@import "/css/_root.css";
 
 body {
   margin: 0;
@@ -134,19 +133,7 @@ margin-right: 50px;
 }
 
 /*Герой*/
-/* .hero-background{
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background: rgba(47, 48, 58, 0.4),url(../images/background/hero.jpg);
-  background-image: url(../images/background/hero.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 
-  outline: 1px solid yellow;
-} */
 .hero {  
   
   padding-top: 200px;
@@ -163,9 +150,8 @@ margin-right: 50px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image:
-  linear-gradient( right, #2F303A 40%) , 
-  rgba(47, 48, 58, 0.4),
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), 
+  rgba(47, 48, 58, 0.4)),
   url('../images/background/hero.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -413,7 +399,19 @@ margin-right: 50px;
 .address-link:focus{
   color: var(--white-color);
 }
+/* Присоеденяйтесь */
+.social-link{
+display: flex;
 
+}
+.join{
+color: var(--white-color);
+text-transform: uppercase;
+
+}
+.join-social-link{
+display: flex;
+}
 /*Портфолио*/
 
 .link.portfolio {

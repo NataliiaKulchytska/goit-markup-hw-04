@@ -118,7 +118,7 @@ margin-right: 50px;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
+  
   color: var(--base-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -126,7 +126,15 @@ margin-right: 50px;
   line-height: 1.14;
   letter-spacing: 0.02em;
  }
+.contact-icon-mail, 
+.contact-icon-tel {
+  
+  margin-right: 10px;
+  
+  fill: currentColor;
+}
 
+ 
 .contact-link:hover,
 .contact-link:focus {
   color: var(--blue-color);
@@ -220,32 +228,21 @@ margin-right: 50px;
 .project-item:not(:last-child) {
   margin-right: 30px;
 }
-.project-item::before{
-  display: block;
-  content: '';
+
+/* Иконки пректов */
+.icon-block{
+  padding: 25px 100px;
   width: 270px;
   height: 120px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: var(--background-icon);
   border-radius: 4px;
   margin-bottom: 30px;
-} 
-/* Иконки пректов */
+}
+.project-icon{
+  width: 70px;
+  height: 70px;
+}
 
-.icon-detail{
-  background-image: url();
-}
-.icon-punctuality{
-  background-image: url();
-}
-.icon-planning{
-  background-image: url();
-}
-.icon-technologies{
-  background-image: url();
-}
 .project-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -316,6 +313,7 @@ margin-right: 50px;
   0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background: var(--white-color);
 }
 
 .command-heading {
@@ -329,7 +327,7 @@ margin-right: 50px;
 
 .command-text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
   
   color: var(--base-text-color);
   font-size: 16px;
@@ -337,12 +335,34 @@ margin-right: 50px;
   text-align: center;  
 }
 .social-command-link{
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  
+  list-style: none;
+}
 
+.item-command-link:not(:last-child){
+  margin-right: 10px;
 }
 .item-command-link{
+  width: 44px;
+  height: 44px;  
+  /* border-radius:50%; */
+  color: var(--color-icon-command);
 
 }
-.command-link{
+
+.command-link:focus, 
+.command-link:hover{
+  fill: var(--blue-color);
+  stroke: var(--white-color);
+}
+.icon-social-link {
+  width: 20px;
+  height: 20px;
+  /* fill: var(--color-icon-command);
+  stroke: var(--color-icon-command); */
 
 }
 /*Footer*/

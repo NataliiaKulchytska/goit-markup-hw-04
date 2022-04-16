@@ -122,7 +122,8 @@ margin-right: 50px;
 }
 
 .contact-link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   
@@ -239,13 +240,17 @@ margin-right: 50px;
 }
 
 /* Иконки пректов */
-.icon-block{
-  padding: 25px 100px;
+.block-icon{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 270px;
   height: 120px;
-  background-color: var(--background-icon);
   border-radius: 4px;
   margin-bottom: 30px;
+
+  background-color: var(--background-icon); 
 }
 
 .project-title {
@@ -394,10 +399,11 @@ margin-right: 50px;
 }
 .client-link{
   display: flex;
-
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
+  
   border: 1px solid var(--color-icon-command);
   border-radius: 4px;
 }
